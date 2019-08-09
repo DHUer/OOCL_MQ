@@ -7,6 +7,7 @@ This repository is designed to offer a quick and simple solution for my company 
 There is only one Central Scanner Router(CSR) in my company used for capturing the RFID(radio-frequency identification) information details on many antenna boards sequentially. And at the same time, there are about dozens of clients needed to communicate with the CSR to gain information about the RFID. The performance downside happens when there are multiple clients sending the request to the CSR simultaneously, then other clients will be blocked for seconds. Besides, the CSR will traverse all the antenna boards to gain the refreshed RFID information, which is trivial and time-consuming.
  
 Below here is a chart of the processing procedure to use the Message Queue component to solve the problem:
+<div>
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
@@ -17,7 +18,7 @@ Below here is a chart of the processing procedure to use the Message Queue compo
     color: #999;
     padding: 2px;">solution workflow chart</div>
 </center>
-
+</div>
 
 
 ## Why use RabbitMQ ?
